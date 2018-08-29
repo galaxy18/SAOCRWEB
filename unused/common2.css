@@ -1,0 +1,38 @@
+#CRCharacter .chara_bg{
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-color: black;
+	background-blend-mode: unset;
+	height: 50%;
+}
+#CRCharacter .chara_bg:nth-child(2){
+	background-position: center bottom;
+}
+#CRCharacter .chara_bg:nth-child(3){
+	background-position: center top;
+	top: 50%;
+}
+#CRCharacter .chara_bg:nth-child(2){
+	background-image: url("assets/bg/common_Bg_top.png");
+}
+#CRCharacter .chara_bg:nth-child(3){
+	background-image: url("assets/bg/common_Bg_bottom.png");
+}
+#CRCharacter .chara_bg.rarity7:nth-child(2){
+	background-image: url("assets/bg/common_bg_rarity7_top.png");
+}
+#CRCharacter .chara_bg.rarity7:nth-child(3){
+	background-image: url("assets/bg/common_bg_rarity7_bottom.png");
+}
+#CRCharacter .chara_bg.rarity8:nth-child(2){
+	background-image: url("assets/bg/common_bg_rarity8_top.png");
+}
+#CRCharacter .chara_bg.rarity8:nth-child(3){
+	background-image: url("assets/bg/common_bg_rarity8_bottom.png");
+}
+#CRCharacter .chara_bg.rarity9:nth-child(2){
+	background-image: url("assets/bg/common_bg_rarity9_top.png");
+}
+#CRCharacter .chara_bg.rarity9:nth-child(3){
+	background-image: url("assets/bg/common_bg_rarity9_bottom.png");
+}

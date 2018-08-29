@@ -1,0 +1,57 @@
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="common.css" type="text/css" />
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+	<script src="build/spine-webgl.js"></script>
+	<script src="js/saocr_Charadef.js"></script>
+	<script src="js/saocr.js"></script>
+</head>
+<body>
+<div style="display:flex; flex-direction: column; height: 100%;">
+	<div>
+	<span>Animation:</span><select id="animationList"></select>
+	</div>
+	<div style="display:flex;justify-content: center;">
+		<div class="option">
+			<div class='chara'>
+				<div>
+					<div class='active' data=''></div>
+					<div class='active' data='001'></div>
+					<div class='active' data='002'></div>
+					<div class='active' data='005'></div>
+					<div class='active' data='006'></div>
+					<div class='active' data='043'></div>
+					<div class='active' data='052'></div>
+					<div class='active' data='066'></div>
+					<div class='active' data='206'></div>
+					<div class='active' data='207'></div>
+				</div>
+			</div>
+		</div>
+		<div id="characterList"></div>
+	</div>
+	<div id="CRCharacter">
+		<!--<canvas class="CRCharacter" slice="42070170" basechara="10010750" style='opacity: 1;'></canvas>-->
+		<div id="canvas1">
+			<canvas></canvas>
+			<div></div>
+		</div>
+	</div>
+</div>
+<script src="js/saocrUI.js"></script>
+<script>
+/*$(".CRCharacter").each(function(){
+	var slice = $(this).attr('slice');
+	var basechara = $(this).attr('basechara');
+	new CRChara({"slice":slice, "id":basechara}, $(this), function(){}).init();
+});*/
+/*function refreshcanvasbackground(charaid, canvas){
+	canvas.css('background-image', "url('assets/icon/web_"+charaid+"1.png'), none");
+}*/
+</script>
+</body>
+</html>

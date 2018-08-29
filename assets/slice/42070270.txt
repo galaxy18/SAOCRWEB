@@ -1,0 +1,193 @@
+42070270/atlas.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+b_hair1
+  rotate: false
+  xy: 506, 2
+  size: 1, 1
+  orig: 484, 414
+  offset: 0, 413
+  index: -1
+b_hair2
+  rotate: false
+  xy: 506, 2
+  size: 1, 1
+  orig: 484, 414
+  offset: 0, 413
+  index: -1
+b_hair3
+  rotate: false
+  xy: 506, 2
+  size: 1, 1
+  orig: 484, 414
+  offset: 0, 413
+  index: -1
+b_hair4
+  rotate: true
+  xy: 2, 113
+  size: 93, 101
+  orig: 484, 414
+  offset: 136, 211
+  index: -1
+b_hair5
+  rotate: false
+  xy: 506, 2
+  size: 1, 1
+  orig: 484, 414
+  offset: 0, 413
+  index: -1
+b_head1
+  rotate: true
+  xy: 430, 54
+  size: 74, 80
+  orig: 484, 414
+  offset: 147, 224
+  index: -1
+face1A
+  rotate: false
+  xy: 172, 205
+  size: 40, 36
+  orig: 484, 414
+  offset: 173, 226
+  index: -1
+face1B
+  rotate: false
+  xy: 214, 205
+  size: 40, 34
+  orig: 484, 414
+  offset: 173, 226
+  index: -1
+face1C
+  rotate: false
+  xy: 298, 249
+  size: 39, 37
+  orig: 484, 414
+  offset: 173, 224
+  index: -1
+face1D
+  rotate: true
+  xy: 268, 192
+  size: 37, 40
+  orig: 484, 414
+  offset: 176, 225
+  index: -1
+face1E
+  rotate: true
+  xy: 139, 221
+  size: 38, 31
+  orig: 484, 414
+  offset: 176, 224
+  index: -1
+face1F
+  rotate: false
+  xy: 268, 153
+  size: 40, 37
+  orig: 484, 414
+  offset: 173, 225
+  index: -1
+face1G
+  rotate: false
+  xy: 96, 286
+  size: 37, 36
+  orig: 484, 414
+  offset: 176, 226
+  index: -1
+face1H
+  rotate: false
+  xy: 254, 256
+  size: 37, 34
+  orig: 484, 414
+  offset: 176, 226
+  index: -1
+face1I
+  rotate: false
+  xy: 172, 243
+  size: 37, 37
+  orig: 484, 414
+  offset: 176, 225
+  index: -1
+hair1
+  rotate: false
+  xy: 506, 2
+  size: 1, 1
+  orig: 484, 414
+  offset: 0, 413
+  index: -1
+hair2
+  rotate: false
+  xy: 2, 208
+  size: 92, 83
+  orig: 484, 414
+  offset: 138, 228
+  index: -1
+hair3
+  rotate: true
+  xy: 107, 31
+  size: 82, 63
+  orig: 484, 414
+  offset: 136, 212
+  index: -1
+hair4
+  rotate: false
+  xy: 506, 2
+  size: 1, 1
+  orig: 484, 414
+  offset: 0, 413
+  index: -1
+hair_side1
+  rotate: false
+  xy: 506, 2
+  size: 1, 1
+  orig: 484, 414
+  offset: 0, 413
+  index: -1
+hair_side2
+  rotate: false
+  xy: 506, 2
+  size: 1, 1
+  orig: 484, 414
+  offset: 0, 413
+  index: -1
+hair_side3
+  rotate: true
+  xy: 172, 117
+  size: 86, 94
+  orig: 484, 414
+  offset: 136, 211
+  index: -1
+hair_side4
+  rotate: false
+  xy: 506, 2
+  size: 1, 1
+  orig: 484, 414
+  offset: 0, 413
+  index: -1
+hair_side5
+  rotate: false
+  xy: 506, 2
+  size: 1, 1
+  orig: 484, 414
+  offset: 0, 413
+  index: -1
+head1
+  rotate: true
+  xy: 430, 130
+  size: 73, 80
+  orig: 484, 414
+  offset: 145, 222
+  index: -1
+side_face1
+  rotate: false
+  xy: 494, 318
+  size: 15, 33
+  orig: 484, 414
+  offset: 194, 226
+  index: -1
+side_head1
+  rotate: true
+  xy: 339, 214
+  size: 72, 76
+  orig: 484, 414
+  offset: 140, 222
+  index: -1

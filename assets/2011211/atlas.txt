@@ -1,0 +1,60 @@
+atlas.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm1
+  rotate: false
+  xy: 457, 2
+  size: 50, 120
+  orig: 711, 711
+  offset: 393, 185
+  index: -1
+arm2
+  rotate: true
+  xy: 137, 242
+  size: 62, 106
+  orig: 711, 711
+  offset: 279, 209
+  index: -1
+body
+  rotate: false
+  xy: 2, 288
+  size: 133, 175
+  orig: 711, 711
+  offset: 294, 138
+  index: -1
+foot1
+  rotate: false
+  xy: 456, 201
+  size: 44, 85
+  orig: 711, 711
+  offset: 359, 94
+  index: -1
+foot2
+  rotate: false
+  xy: 457, 124
+  size: 47, 75
+  orig: 711, 711
+  offset: 307, 109
+  index: -1
+head_a
+  rotate: false
+  xy: 2, 2
+  size: 255, 238
+  orig: 711, 711
+  offset: 240, 282
+  index: -1
+weapon1
+  rotate: false
+  xy: 259, 127
+  size: 195, 126
+  orig: 711, 711
+  offset: 249, 90
+  index: -1
+weapon2
+  rotate: false
+  xy: 259, 2
+  size: 196, 123
+  orig: 711, 711
+  offset: 125, 118
+  index: -1
