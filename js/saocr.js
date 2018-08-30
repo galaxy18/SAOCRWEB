@@ -111,6 +111,10 @@ function CRChara(options, canvas, callback) {
 			var skeleton = this.skeletons[this.activeSkeleton].skeleton;
 			if (type == 'click'){
 				return (skeleton.data.animations[Math.floor(Math.random()*skeleton.data.animations.length)].name);
+			}else if(this.options.weapon == 'skeleton'){
+				if (this.lastAnimation == null)
+					this.lastAnimation = skeleton.data.animations[0].name;
+				return this.lastAnimation;
 			}else{
 				return (this.options.weapon+'_'+this.animations.idle[Math.floor(Math.random()*this.animations.idle.length)]);
 			}
@@ -170,7 +174,8 @@ function CRChara(options, canvas, callback) {
 				var state = CRObj.skeletons[CRObj.activeSkeleton].state;
 				var skeleton = CRObj.skeletons[CRObj.activeSkeleton].skeleton;
 				var animationName = CRObj.getRandomAnimation();
-				$("#animationList").val(animationName);
+				if(CRObj.options.weapon != 'skeleton')
+					$("#animationList").val(animationName);
 				//skeleton.setToSetupPose();
 				state.setAnimation(0, animationName, true);
 			},
@@ -234,6 +239,7 @@ function CRChara(options, canvas, callback) {
 				var skeleton = CRObj.skeletons[CRObj.activeSkeleton].skeleton;
 				var animationName = $("#animationList option:selected").text();
 				skeleton.setToSetupPose();
+				CRObj.lastAnimation = animationList.val();
 				state.setAnimation(0, animationName, true);			
 			})
 		}
