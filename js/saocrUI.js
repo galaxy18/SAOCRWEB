@@ -16,6 +16,34 @@ if (slice != undefined && slice != ''){
 	genderfilter = getUrlParam('gender');
 	if (genderfilter == undefined) genderfilter = '';
 }
+/*make weapon list*/
+function makeweaponlist(){
+	var weaponList = $('#weaponList');
+	var weapons = new Array("gulid", "blade01", "blade02", "bow01", "double01", "gun01",
+		"knife01", "pole01", "pole02", "rifle01", "shield01",
+		"shield02", "sword01", "sword02",
+		"f_blade01", "f_blade02", "f_bow01", "f_double01",
+		"f_knife01", "f_pole01", "f_pole02", "f_shield01",
+		"f_shield02", "f_sword01", "f_sword02");
+	for (var i=0;i<weapons.length; i++){
+		weaponList.append('<option value="'+weapons[i]+'">'+weapons[i]+'</option>');
+	}
+	weaponList.val('gulid');
+	weaponList.change(function(){
+		if (chara1 != undefined){
+			if (chara1.options.weapon.startsWith('m_')){return;}
+			chara1.stop = true;
+		}
+		chara1.options.weapon = weaponList.val();
+		chara1 = new CRChara(chara1.options, chara1.canvas, 
+			function(){
+				canvas.find('canvas').animate({opacity: 1, marginLeft: 0}, 500);
+				canvas.find('div').animate({opacity: 1}, 500);
+		}).init();
+	});
+}
+makeweaponlist();
+/*make character list*/
 var characterList = $('#characterList');
 var tablekey = new Array();
 if (getUrlParam('list') == undefined || getUrlParam('list') == ''){
@@ -27,7 +55,6 @@ if (getUrlParam('list') == undefined || getUrlParam('list') == ''){
 }else{
 	tablekey.push(getUrlParam('list'));
 }
-
 if (window.cacheid || (getUrlParam("id") != "" && getUrlParam("id") != undefined)){
 	var option = $("<div></div>");
 	if ((getUrlParam("id") != "" && getUrlParam("id") != undefined) || (!window.cacheid || cacheid == "" || cacheid == undefined)){
@@ -73,7 +100,7 @@ characterList.each(function(){
 	var charaid = $(this).attr('charaid');
 	$(this).css('background-image','url(assets/icon/web_'+charaid+'1.png)');
 });
-
+/*select character event*/
 characterList.click(function(){
 	characterList.removeClass("active");
 	$(this).addClass("active");

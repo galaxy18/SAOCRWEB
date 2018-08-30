@@ -1,5 +1,5 @@
 function CRChara(options, canvas, callback) {
-	this.options = $.extend({"weapon":'gulid', "gender":'m'}, options);
+	this.options = $.extend({"weapon":$('#weaponList').val(),"gender":'m'}, options);
 	this.lastFrameTime = Date.now() / 1000;
 	this.mvp = new spine.webgl.Matrix4();
 	this.skeletons = {};
@@ -24,7 +24,6 @@ function CRChara(options, canvas, callback) {
 	this.init = function() {
 		//if (this.options.id == undefined) return;
 		this.activeSkeleton = this.options.id;
-
 		if (this.options.weapon == "gulid"){
 			if (this.options.gender.toUpperCase() == "F"){
 				if (isdesktop){
@@ -219,7 +218,7 @@ function CRChara(options, canvas, callback) {
 			var animationList = $("#animationList");
 			if (animationList == undefined){return;}
 			
-			animationList.empty();
+			animationList.empty().unbind();
 			var skeleton = CRObj.skeletons[CRObj.activeSkeleton].skeleton;
 			var state = CRObj.skeletons[CRObj.activeSkeleton].state;
 			var activeAnimation = state.tracks[0].animation.name;
