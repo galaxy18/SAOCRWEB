@@ -24,7 +24,7 @@ function makeweaponlist(){
 		"shield02", "sword01", "sword02",
 		"f_blade01", "f_blade02", "f_bow01", "f_double01",
 		"f_knife01", "f_pole01", "f_pole02", "f_shield01",
-		"f_shield02", "f_sword01", "f_sword02");
+		"f_shield02", "f_sword01", "f_sword02", "skeleton");
 	for (var i=0;i<weapons.length; i++){
 		weaponList.append('<option value="'+weapons[i]+'">'+weapons[i]+'</option>');
 	}

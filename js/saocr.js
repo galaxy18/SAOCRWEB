@@ -4,12 +4,6 @@ function CRChara(options, canvas, callback) {
 	this.mvp = new spine.webgl.Matrix4();
 	this.skeletons = {};
 	this.activeSkeleton = "";
-	/*this.weapons = new Array("gulid", "blade01", "blade02", "bow01", "double01", "gun01",
-			"knife01", "pole01", "pole02", "rifle01", "shield01",
-			"shield02", "sword01", "sword02",
-			"f_blade01", "f_blade02", "f_bow01", "f_double01",
-			"f_knife01", "f_pole01", "f_pole02", "f_shield01",
-			"f_shield02", "f_sword01", "f_sword02");*/
 	this.animations = new Object();
 	this.animations.idle = new Array("Ready_A","Run_A","Stand_A");
 	this.animations.click = new Object();
