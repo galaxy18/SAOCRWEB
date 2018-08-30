@@ -332,25 +332,17 @@ function CRChara(options, canvas, callback) {
 			this.canvas[0].height = h;
 		}
 		
-		/*
 		var centerX = bounds.offset.x + bounds.size.x / 2;
 		var centerY = bounds.offset.y + bounds.size.y / 2;
 		var scaleX = bounds.size.x / this.canvas[0].width;
 		var scaleY = bounds.size.y / this.canvas[0].height;
+		centerX = bounds.offset.x + 400 / 2;
+		centerY = bounds.offset.y + 400 / 2;
+		scaleX = 400 / this.canvas[0].width;
+		scaleY = 400 / this.canvas[0].height;
 		var scale = Math.max(scaleX, scaleY) * 1.2;
-		if (scale < 1) scale = 1;
-		var width = this.canvas[0].width * scale;
-		var height = this.canvas[0].height * scale;
-
-		this.mvp.ortho2d(centerX - width / 2, centerY - height / 2, width, height);
-		this.gl.viewport(0, 0, this.canvas[0].width, this.canvas[0].height);
-		*/
 		
-		var centerX = bounds.offset.x + bounds.size.x / 2;
-		var centerY = bounds.offset.y + bounds.size.y / 2;
-		var scaleX = bounds.size.x / this.canvas[0].width;
-		var scaleY = bounds.size.y / this.canvas[0].height;
-		var scale = Math.max(scaleX, scaleY) * 1.2;
+		//if (scale < 1) scale = 1;
 		if (scale < 0.5) scale = 0.5;
 		var width = this.canvas[0].width * scale;
 		var height = this.canvas[0].height * scale;
@@ -368,10 +360,10 @@ function CRChara(options, canvas, callback) {
 				bounds.offset.x -= 2;
 			}
 		}
-	
+		
 		this.mvp.ortho2d(centerX - width / 2, centerY - height / 2, width, height);
 		this.gl.viewport(0, 0, this.canvas[0].width, this.canvas[0].height);
 		
-		//console.log(bounds.size.x+","+bounds.offset.x+","+this.canvas[0].width);
+		console.log("centerX:"+centerX+", centerY:"+centerY+", sizeX:"+bounds.size.x+", offsetX"+bounds.offset.x+","+this.canvas[0].width);
 	}
 };
