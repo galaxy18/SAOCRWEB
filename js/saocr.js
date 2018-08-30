@@ -11,7 +11,7 @@ function CRChara(options, canvas, callback) {
 			"f_knife01", "f_pole01", "f_pole02", "f_shield01",
 			"f_shield02", "f_sword01", "f_sword02");*/
 	this.animations = new Object();
-	this.animations.idle = new Object();
+	this.animations.idle = new Array("Ready_A","Run_A","Stand_A");
 	this.animations.click = new Object();
 	this.animations.idle.male = new Array("man_stand_A","man_stand_B","man_stand_C");
 	this.animations.idle.female = new Array("woman_stand_A","woman_stand_B","woman_stand_C","woman_stand_D");
@@ -115,7 +115,11 @@ function CRChara(options, canvas, callback) {
 			return (this.animations.idle[Math.floor(Math.random()*this.animations.idle.length)]);
 		}else{
 			var skeleton = this.skeletons[this.activeSkeleton].skeleton;
-			return (skeleton.data.animations[Math.floor(Math.random()*skeleton.data.animations.length)].name);
+			if (type == 'click'){
+				return (skeleton.data.animations[Math.floor(Math.random()*skeleton.data.animations.length)].name);
+			}else{
+				return (this.options.weapon+'_'+this.animations.idle[Math.floor(Math.random()*this.animations.idle.length)]);
+			}
 		}
 	}
 	
@@ -172,6 +176,7 @@ function CRChara(options, canvas, callback) {
 				var state = CRObj.skeletons[CRObj.activeSkeleton].state;
 				var skeleton = CRObj.skeletons[CRObj.activeSkeleton].skeleton;
 				var animationName = CRObj.getRandomAnimation();
+				$("#animationList").val(animationName);
 				//skeleton.setToSetupPose();
 				state.setAnimation(0, animationName, true);
 			},
