@@ -12,23 +12,28 @@
 </head>
 <body>
 <div style="display:flex; flex-direction: column; height: 100%;">
-	<div>
-	<span>Animation:</span><select id="animationList"></select><select id="weaponList"></select>
-	</div>
-	<div class="menu" style="display:flex;justify-content: center;">
-		<div class="option">
-			<div class='chara'>
-				<div>
+	<div class="menu hide">
+		<div>
+			<div class="option">
+				<div class='chara'>
 					<div class='active' data=''></div>
 					<div class='active' data='001'></div>
 					<div class='active' data='002'></div>
+					<div class='active' data='003'></div>
+					<div class='active' data='004'></div>
 					<div class='active' data='005'></div>
 					<div class='active' data='006'></div>
+					<div class='active' data='007'></div>
+					<div class='active' data='012'></div>
+					<div class='active' data='020'></div>
+					<div class='active' data='036'></div>
 					<div class='active' data='043'></div>
 					<div class='active' data='052'></div>
 					<div class='active' data='066'></div>
 					<div class='active' data='108'></div>
+					<div class='active' data='110'></div>
 					<div class='active' data='119'></div>
+					<div class='active' data='129'></div>
 					<div class='active' data='139'></div>
 					<div class='active' data='140'></div>
 					<div class='active' data='164'></div>
@@ -36,21 +41,21 @@
 					<div class='active' data='206'></div>
 					<div class='active' data='207'></div>
 					<div class='active' data='900'></div>
-					
-					<div class='active' data='003'></div>
-					<div class='active' data='004'></div>
-					<div class='active' data='007'></div>
-					<div class='active' data='012'></div>
-					<div class='active' data='020'></div>
-					<div class='active' data='036'></div>
-					<div class='active' data='110'></div>
-					<div class='active' data='129'></div>
 				</div>
 			</div>
+			<div id="characterList"></div>
+			<div>
+				<span>Animation:</span>
+				<select id="animationList"></select>
+				<select id="weaponList"></select>
+			</div>
 		</div>
-		<div id="characterList"></div>
+		<div class="hideoption">
+			<div id="filterhide">SHOW OPTIONS</div>
+			<div id="charalisthide">SHOW ALL</div>
+		</div>
 	</div>
-	<div id="CRCharacter">
+	<div id="CRCharacter" style="display:none;">
 		<!--<canvas class="CRCharacter" slice="42070170" basechara="10010750" style='opacity: 1;'></canvas>-->
 		<div id="canvas1">
 			<canvas></canvas>
