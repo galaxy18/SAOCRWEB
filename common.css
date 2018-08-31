@@ -187,6 +187,7 @@ canvas {
 	width: 100%;
 	height: 100%;
 	position: relative;
+	z-index: -2;
 }
 #CRCharacter>div>div{
 	width: 100%;
