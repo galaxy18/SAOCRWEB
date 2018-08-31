@@ -103,7 +103,6 @@ canvas {
 	-webkit-border-image:url('assets/frame.png') 63 110 51 30 stretch;
 	border-image:url('assets/frame.png') 63 110 51 30 fill stretch;
 	box-sizing:border-box;
-	z-index:-1;
 }
 .menu>div>div{z-index:1;}
 
