@@ -185,9 +185,9 @@ $('.option .rarity div').click(function(){
 $('.option .chara div').click(function(){
 	filter_chara = $(this).attr('data');
 	if (filter_chara === ''){
-		$('.option .chara div div').switchClass('inactive','active');
+		$('.option .chara>div').switchClass('inactive','active');
 	}else{
-		$('.option .chara div div:not([data='+filter_chara+'])').switchClass('active','inactive');
+		$('.option .chara>div:not([data='+filter_chara+'])').switchClass('active','inactive');
 		$(this).switchClass('inactive','active');
 	}
 	applyfilter();
