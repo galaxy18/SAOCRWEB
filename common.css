@@ -87,8 +87,8 @@ canvas {
 
 .menu{position: absolute;width: 100vw;top: 0;left: 0;transition-duration: 2s;display:flex;flex-direction: column;}
 .menu>div{z-index:1;}
-.menu>div:not(.hideoption){height: 90vh;display: flex;flex-direction: column;}
-.menu.hide{top: -90vh;}
+.menu>div:not(.hideoption){height: 80vh;display: flex;flex-direction: column;}
+.menu.hide{top: -80vh;}
 .menu.hidehalf{top: -35vh;}
 .menu:before{
 	content:'';
