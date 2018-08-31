@@ -151,33 +151,31 @@ canvas {
 .option .chara div[data='']{
 	background-image:none;
 }
-.option .chara div[data='001']{
-	background-image: url(assets/icon/web_100113601.png);
-}
-.option .chara div[data='002']{
-	background-image: url(assets/icon/web_100216601.png);
-}
-.option .chara div[data='005']{
-	background-image: url(assets/icon/web_200502501.png);
-}
-.option .chara div[data='006']{
-	background-image: url(assets/icon/web_400601701.png);
-}
-.option .chara div[data='043']{
-	background-image: url(assets/icon/web_104327801.png);
-}
-.option .chara div[data='052']{
-	background-image: url(assets/icon/web_305224701.png);
-}
-.option .chara div[data='066']{
-	background-image: url(assets/icon/web_106618801.png);
-}
-.option .chara div[data='206']{
-	background-image: url(assets/icon/web_420601701.png);
-}
-.option .chara div[data='207']{
-	background-image: url(assets/icon/web_420701701.png);
-}
+.option .chara div[data='001']{background-image: url(assets/icon/web_100113601.png);}
+.option .chara div[data='002']{background-image: url(assets/icon/web_100216601.png);}
+.option .chara div[data='005']{background-image: url(assets/icon/web_200502501.png);}
+.option .chara div[data='006']{background-image: url(assets/icon/web_400601701.png);}
+.option .chara div[data='043']{background-image: url(assets/icon/web_104327801.png);}
+.option .chara div[data='052']{background-image: url(assets/icon/web_305224701.png);}
+.option .chara div[data='066']{background-image: url(assets/icon/web_106618801.png);}
+.option .chara div[data='108']{background-image: url(assets/icon/web_110801401.png);}
+.option .chara div[data='119']{background-image: url(assets/icon/web_111901501.png);}
+.option .chara div[data='139']{background-image: url(assets/icon/web_213901501.png);}
+.option .chara div[data='140']{background-image: url(assets/icon/web_214001501.png);}
+.option .chara div[data='164']{background-image: url(assets/icon/web_216401601.png);}
+.option .chara div[data='188']{background-image: url(assets/icon/web_118801601.png);}
+.option .chara div[data='206']{background-image: url(assets/icon/web_420601701.png);}
+.option .chara div[data='207']{background-image: url(assets/icon/web_420701701.png);}
+.option .chara div[data='900']{background-image: url(assets/icon/web_190001501.png);}
+
+.option .chara div[data='003']{background-image: url(assets/icon/web_100301301.png);}
+.option .chara div[data='004']{background-image: url(assets/icon/web_100402301.png);}
+.option .chara div[data='007']{background-image: url(assets/icon/web_100701301.png);}
+.option .chara div[data='012']{background-image: url(assets/icon/web_101201401.png);}
+.option .chara div[data='020']{background-image: url(assets/icon/web_102001301.png);}
+.option .chara div[data='036']{background-image: url(assets/icon/web_103601301.png);}
+.option .chara div[data='110']{background-image: url(assets/icon/web_111001301.png);}
+.option .chara div[data='129']{background-image: url(assets/icon/web_112901601.png);}
 
 .control {
 	position: relative;

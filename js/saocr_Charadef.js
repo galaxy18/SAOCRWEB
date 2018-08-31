@@ -1,4 +1,4 @@
-var saoCRcharaMaleList = new Array("001");
+var saoCRcharaMaleList = new Array('001','003','004','012','020','207');
 var saoCRcharaTable = {
 	/*"enemy":new Array(
 		{"ID":"2011211", "weapon":"m_501_a"}
