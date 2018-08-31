@@ -215,6 +215,5 @@ canvas {
 .hideoption{display: flex;flex-wrap: wrap;justify-content: space-around;}
 .hideoption>div{padding: 5px 10px;border: 1px solid white;margin: 5px 0 10px;border-radius: 0 0 10px 0;}
 
-
-.option .chara>div{border: 1px solid red;}
-#characterList>div{border: 1px solid blue;}
+/*.option .chara>div{border: 1px solid red;}
+#characterList>div{border: 1px solid blue;}*/
