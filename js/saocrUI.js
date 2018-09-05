@@ -123,12 +123,13 @@ characterList.click(function(){
 	
 	if (charaid != undefined){
 		canvas.find('div').animate({opacity: 0}, 500);
+		$('.chara_bg').removeClass('rarity7').removeClass('rarity8').removeClass('rarity9');
 		if (rarity == "7"){
-			$('.chara_bg').removeClass('rarity7').removeClass('rarity8').removeClass('rarity9').addClass('rarity7');
+			$('.chara_bg').addClass('rarity7');
 		}else if (rarity == "8"){
-			$('.chara_bg').removeClass('rarity7').removeClass('rarity8').removeClass('rarity9').addClass('rarity8');
+			$('.chara_bg').addClass('rarity8');
 		}else if (rarity == "9"){
-			$('.chara_bg').removeClass('rarity7').removeClass('rarity8').removeClass('rarity9').addClass('rarity9');
+			$('.chara_bg').addClass('rarity9');
 		}
 		canvas.find('canvas').animate({opacity: 0, marginLeft: "-50%"}, 500, function(){
 			if (chara1 != undefined)chara1.stop = true;
