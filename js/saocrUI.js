@@ -228,6 +228,7 @@ $('#filterhide').click(function(){
 $('#charalisthide').click(function(){
 	if ($('.menu').hasClass('hide')){
 		$('.menu').removeClass('hide');
+		$('#filterhide').html('HIDE OPTIONS');
 		$('#charalisthide').html('HIDE ALL');
 	}else if($('.menu').hasClass('hidehalf')){
 		$('.menu').removeClass('hidehalf').addClass('hide');
