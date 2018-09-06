@@ -460,7 +460,7 @@ chest1
 face1A
   rotate: false
   xy: 480, 235
-  size: 39, 36
+  size: 39, 35
   orig: 484, 414
   offset: 173, 226
   index: -1
