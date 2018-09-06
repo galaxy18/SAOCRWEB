@@ -133,7 +133,13 @@ characterList.click(function(){
 		}
 		canvas.find('canvas').animate({opacity: 0, marginLeft: "-50%"}, 500, function(){
 			if (chara1 != undefined)chara1.stop = true;
-			chara1 = new CRChara({"desktop":isdesktop, "id":charaid, "slice":slice, "weapon":weapon, "gender":gender}, canvas.find('canvas'), 
+			var _options = {
+				"desktop":isdesktop,
+				"id":charaid,
+				"slice":slice};
+			if (weapon != null && weapon != "")	_options.weapon = weapon;
+			if (gender != null && gender != "")	_options.gender = gender;
+			chara1 = new CRChara(_options, canvas.find('canvas'),
 				function(){
 					canvas.find('canvas').animate({opacity: 1, marginLeft: 0}, 500);
 					canvas.find('div').animate({opacity: 1}, 500);
