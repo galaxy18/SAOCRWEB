@@ -117,15 +117,12 @@ function CRChara(options, canvas, callback) {
 					return (skeleton.data.animations[Math.floor(Math.random()*skeleton.data.animations.length)].name);
 				}
 			}else{
-				if(this.options.weapon == 'skeleton'){
-					if (this.lastAnimation == null)
-						this.lastAnimation = skeleton.data.animations[0].name;
-					return this.lastAnimation;
-				}else if (this.animations.idle.indexOf(this.lastAnimation)>=0){
-					return this.lastAnimation;
-				}else{
-					return (this.options.weapon+'_'+this.animations.idle[Math.floor(Math.random()*this.animations.idle.length)]);
+				if(this.options.weapon == 'skeleton' && this.lastAnimation == null){
+					this.lastAnimation = skeleton.data.animations[0].name;
+				}else if (this.lastAnimation==null||this.animations.idle.indexOf(this.lastAnimation.replace(this.options.weapon+'_', ''))<0){
+					this.lastAnimation = this.options.weapon+'_'+this.animations.idle[Math.floor(Math.random()*this.animations.idle.length)]
 				}
+				return this.lastAnimation;
 			}
 		}
 	}
