@@ -116,12 +116,16 @@ function CRChara(options, canvas, callback) {
 				}else{
 					return (skeleton.data.animations[Math.floor(Math.random()*skeleton.data.animations.length)].name);
 				}
-			}else if(this.options.weapon == 'skeleton'){
-				if (this.lastAnimation == null)
-					this.lastAnimation = skeleton.data.animations[0].name;
-				return this.lastAnimation;
 			}else{
-				return (this.options.weapon+'_'+this.animations.idle[Math.floor(Math.random()*this.animations.idle.length)]);
+				if(this.options.weapon == 'skeleton'){
+					if (this.lastAnimation == null)
+						this.lastAnimation = skeleton.data.animations[0].name;
+					return this.lastAnimation;
+				}else if (this.animations.idle.indexOf(this.lastAnimation)>=0){
+					return this.lastAnimation;
+				}else{
+					return (this.options.weapon+'_'+this.animations.idle[Math.floor(Math.random()*this.animations.idle.length)]);
+				}
 			}
 		}
 	}
